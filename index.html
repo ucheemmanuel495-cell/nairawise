@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#092e25">
+  <meta name="description" content="NairaWise — a smarter way to plan, manage and understand your money.">
+  <title>NairaWise | Make Your Money Count</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9f7;
+      color: #18251f;
+      line-height: 1.6;
+    }
+    header {
+      background: #092e25;
+      color: white;
+      padding: 20px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo { font-size: 25px; font-weight: 800; letter-spacing: -1px; }
+    .logo span { color: #8ce0ad; }
+    nav { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    nav a { color: #e2eee7; text-decoration: none; font-size: 14px; }
+    .hero {
+      background: linear-gradient(135deg, #092e25, #155640);
+      color: white;
+      padding: 76px 6% 82px;
+    }
+    .hero-content { max-width: 760px; }
+    .eyebrow {
+      color: #9ce8b9;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: clamp(38px, 7vw, 66px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin: 20px 0;
+    }
+    .hero p { color: #d7e8df; max-width: 590px; font-size: 17px; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+    .btn {
+      display: inline-block;
+      padding: 13px 21px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+    .primary { background: #a2edbd; color: #092e25; }
+    .secondary { border-color: #a6c5b4; color: white; }
+    main { padding: 55px 6%; }
+    .section-heading { text-align: center; margin-bottom: 32px; }
+    .section-heading h2 { font-size: 30px; margin-bottom: 8px; }
+    .section-heading p { color: #64736a; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border: 1px solid #e1e9e3;
+      border-radius: 14px;
+    }
+    .symbol {
+      background: #e6f5eb;
+      color: #176b43;
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      font-size: 21px;
+      margin-bottom: 18px;
+    }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #65746b; font-size: 14px; }
+    .notice {
+      background: #edf4ef;
+      border-left: 4px solid #238052;
+      padding: 22px;
+      margin-top: 30px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .about {
+      background: white;
+      border-top: 1px solid #e6ece7;
+      border-bottom: 1px solid #e6ece7;
+    }
+    .about-inner { max-width: 760px; margin: auto; text-align: center; }
+    .about-inner p { color: #64736a; margin-top: 12px; }
+    footer {
+      background: #092e25;
+      color: #d7e8df;
+      padding: 30px 6%;
+      font-size: 13px;
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    footer a { color: #a2edbd; text-decoration: none; }
+    @media (max-width: 500px) {
+      header { padding: 18px 5%; }
+      nav { gap: 12px; }
+      nav a { font-size: 12px; }
+      .hero { padding: 58px 5%; }
+      main { padding: 42px 5%; }
+      h1 { letter-spacing: -1px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#" style="color:white;text-decoration:none">Naira<span>Wise</span></a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#notice">Important information</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">A smarter financial future</div>
+      <h1>Make your money decisions with confidence.</h1>
+      <p>
+        NairaWise is being built to help people manage their financial
+        journey with clarity, useful tools and transparent information.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#features">Explore NairaWise</a>
+        <a class="btn secondary" href="#about">Learn about us</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="features">
+    <div class="section-heading">
+      <h2>Built around your financial goals</h2>
+      <p>Simple tools designed to help you make informed decisions.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <div class="symbol">₦</div>
+        <h3>Money management</h3>
+        <p>Plan your finances and work toward your personal savings goals.</p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">↗</div>
+        <h3>Financial education</h3>
+        <p>Learn about risk, budgeting and the basics of making financial decisions.</p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">◎</div>
+        <h3>Account dashboard</h3>
+        <p>A planned space to review account activity and track your financial progress.</p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">⌁</div>
+        <h3>Clear information</h3>
+        <p>Understand fees, terms and risks before making financial commitments.</p>
+      </article>
+    </div>
+
+    <div class="notice" id="notice">
+      <strong>Important information</strong>
+      <p>
+        NairaWise is under development. Account registration, deposits,
+        withdrawals and investment services are not yet operational.
+        No funds should be sent to this website. Any future financial
+        services will require appropriate regulatory review, security
+        controls and clearly disclosed terms. Investments can lose value;
+        returns are not guaranteed.
+      </p>
+    </div>
+  </main>
+
+  <section class="about" id="about">
+    <main class="about-inner">
+      <h2>Our vision</h2>
+      <p>
+        We want to make financial information easier to understand and
+        help people approach their financial goals responsibly.
+        We are building NairaWise with transparency and user security
+        at the centre.
+      </p>
+    </main>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <div class="logo">Naira<span>Wise</span></div>
+        <p>Plan wisely. Move forward confidently.</p>
+      </div>
+      <p>© <span id="year"></span> NairaWise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
